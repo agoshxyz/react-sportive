@@ -24,13 +24,17 @@ const Login = ({navigation}) => {
 
                 navigation.navigate('Dashboard')
             }
+            else{
+                alert("Email or password doesn't match")
+            }
+
             console.log('🚀 ----------------------------------------------------------------------------')
-            console.log('🚀 ~ file: Register.js ~ line 24 ~ submitHandler ~ responseJson', responseJson)
+            console.log('🚀 ~ submitHandler ~ responseJson', responseJson)
             console.log('🚀 ----------------------------------------------------------------------------')
       
           } catch (error) {
             console.log('🚀 --------------------------------------------------------------')
-            console.log('🚀 ~ file: Register.js ~ line 19 ~ submitHandler ~ error', error)
+            console.log('🚀 ~ submitHandler ~ error', error)
             console.log('🚀 --------------------------------------------------------------')
       
           }

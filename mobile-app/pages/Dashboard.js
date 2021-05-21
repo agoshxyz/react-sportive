@@ -1,6 +1,5 @@
 import React from 'react'
 import {View, Text, TouchableOpacity, StyleSheet, ImageBackground} from 'react-native'
-import{color} from 'react-native-reanimated'
 
 const bgImage = require('../assets/background.jpg')
 

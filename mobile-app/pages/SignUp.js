@@ -20,6 +20,10 @@ const SignUp = ({navigation}) => {
             })
 
             const responseJson = await response.json()
+
+            
+
+
             console.log('🚀 ----------------------------------------------------------------------------')
             console.log('🚀 ~ file: Register.js ~ line 24 ~ submitHandler ~ responseJson', responseJson)
             console.log('🚀 ----------------------------------------------------------------------------')
