@@ -2,13 +2,23 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+
 export default function App() {
+  const Stack = createStackNavigator()
   return (
-    <View style={styles.container}>
-      <Text>Hello World</Text>
-      <View style={styles.btnContainer}><Text style={styles.text}>Thats fine!</Text></View>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{
+        headerShown: false
+      }}>
+        <Stack.Screen name="Login" component={Login}/>
+        <Stack.Screen name="SignUp" component={SignUp}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
